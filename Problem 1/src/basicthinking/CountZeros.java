@@ -24,6 +24,7 @@ public class CountZeros {
 	public static void main(String[] args) {
 		//int a[] = {0,0, 0, 0, 0, 3, 2, 8, 11, 10, 15, 22};
 		int a[] = randomGenerator(Integer.parseInt(args[0]));
+		//to check the random numbers generated
 //		for (int i =0 ; i< a.length;++i)
 //			System.out.println(a[i]);
 		long start = System.currentTimeMillis();
