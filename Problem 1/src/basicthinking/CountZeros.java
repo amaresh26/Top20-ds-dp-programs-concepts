@@ -22,7 +22,6 @@ public class CountZeros {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		//int a[] = {0,0, 0, 0, 0, 3, 2, 8, 11, 10, 15, 22};
 		int a[] = randomGenerator(Integer.parseInt(args[0]));
 		//to check the random numbers generated
 //		for (int i =0 ; i< a.length;++i)
@@ -32,7 +31,7 @@ public class CountZeros {
 		long end = System.currentTimeMillis();
 
 		System.out.println("Count of zeros are "+ count);
-		System.out.println((end - start) / 1000.0 + "seconds");
+		System.out.println("time taken "+(end - start) / 1000.0 + "seconds");
 	}
 
 	/**
