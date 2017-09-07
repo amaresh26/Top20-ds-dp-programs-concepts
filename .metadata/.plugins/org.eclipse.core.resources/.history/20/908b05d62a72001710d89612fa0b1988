@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package set1;
+
+/**
+ * @author amareshjana
+ *
+ */
+public class OddLetters {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
