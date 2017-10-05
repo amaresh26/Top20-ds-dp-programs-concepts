@@ -128,9 +128,13 @@ public class LinkedList implements List{
 	 */
 	@Override
 	public void displayElements() {
-		for (ListNode current = head.getNextNode();current != null ;current = current.getNextNode()){
-			System.out.println("Data is "+current.getData());
+		for (ListNode current = head.getNextNode() ; current != null ; current = current.getNextNode()){
+			if (current.getNextNode() == null)
+				System.out.print(current.getData()+"\n");
+			else
+				System.out.print(current.getData()+" -> ");
 		}
+		
 	}
 
 	/* (non-Javadoc)
@@ -146,5 +150,12 @@ public class LinkedList implements List{
 				current.setNextNode(next);
 			}
 		}
+	}
+	
+	/*(non-Javadon)
+	 * This is used to get he headNode of the LinkedList class
+	 */
+	public ListNode getHeadNode(){
+		return head;
 	}
 }

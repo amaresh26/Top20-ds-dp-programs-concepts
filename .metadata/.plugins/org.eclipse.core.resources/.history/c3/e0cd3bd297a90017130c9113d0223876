@@ -1,0 +1,39 @@
+/**
+ * This ProgramPerformanceCalc.java class is created for the calculating the performance of the program which you have done.
+ * 
+ * 
+ */
+
+/**
+ * @author amareshjana
+ * @version 
+ * @since 05-Oct-2017
+ *
+ */
+public class ProgramPerformanceCalc {
+	
+	private int 
+
+	/**
+	 * This is used to note the Start time of the program you
+	 * are testing the time taken
+	 * 
+	 * */
+	public void startTime(){
+		return 0;
+	}
+
+	/**
+	 * this is used to note the end time of the program you
+	 * are testing the time taken
+	 * */
+	public void endTime(){
+		return 0;
+	}
+	/**
+	 * this is used to calc the time taken by the program which you have written
+	 * */
+	public int calTime(){
+		return 0;
+	}
+}

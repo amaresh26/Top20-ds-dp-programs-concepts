@@ -1,0 +1,154 @@
+/**
+ * 
+ */
+package linkedlist;
+
+import java.util.Scanner;
+
+/**
+ * @author amareshjana
+ */
+public class LinkedList implements List{
+
+	private static int size;
+	private ListNode head;
+	private ListNode last;
+	private static boolean loop;
+
+	/**
+	 * 
+	 */
+	public LinkedList() {
+		/***
+		 * if head and last are at the diff then we need to use method 1 of addElement
+		 * */
+		/*head = new ListNode();
+		last = new ListNode();*/
+		/***
+		 * if head and lst are at the same address then we need to use method 2 of addElement
+		 * */
+		head = last = new ListNode();
+		size = 0;
+		loop = true;
+	}
+
+	public static void main(String[] monkeyCoderz){
+		LinkedList mLinkedList = new LinkedList();
+		while(loop){
+			showMenu(mLinkedList);	
+		}		
+	}
+
+	/**
+	 *  ${no return type}
+	 */
+	private static void showMenu(LinkedList mLinkedList) {
+		System.out.println("Please Choose the option");
+		System.out.println("1. Add Element to List");
+		System.out.println("2. Delete Element in List at Postion");
+		System.out.println("3. Display Element");
+		System.out.println("4. Get the Element at Position");
+		System.out.println("5. Get the Size of linked List");
+		System.out.println("6. Exit");
+
+
+		//to get the input from the user 
+		Scanner mScan = new Scanner(System.in);
+		int userInput = mScan.nextInt();
+		switch(userInput){
+		case 1:
+			System.out.println("Please enter the data");
+			int element = mScan.nextInt();
+			mLinkedList.addElement(element);
+			break;
+		case 2:
+			System.out.println("Please enter the position to delet the node");
+			int position = mScan.nextInt();
+			mLinkedList.deletElement(position);
+			break;
+		case 3:
+			mLinkedList.displayElements();
+			break;
+		case 4:
+			System.out.println("Please enter the position to get the node");
+			int pos = mScan.nextInt();
+			mLinkedList.deletElement(pos);
+			break;
+		case 5:
+			System.out.println("Size of linked list is "+size);
+			break;
+		case 6:
+			loop = false;
+			break;
+		default:
+			System.out.println("Wrong input");
+			break;
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see stackusinglinkedlist.List#addElement(int)
+	 */
+	@Override
+	public void addElement(int element) {
+		ListNode mNode = new ListNode(null, element);
+		// method 1
+		/*if (head.getNextNode() == null){
+			head.setNextNode(mNode);
+			last = mNode;
+		}else {
+			last.setNextNode(mNode);
+			last = mNode;
+		}
+		++size;*/
+
+		// method 2
+		last.setNextNode(mNode);
+		last = mNode;
+		++size;
+	}
+
+	/* (non-Javadoc)
+	 * @see stackusinglinkedlist.List#deletElement(int)
+	 */
+	@Override
+	public void deletElement(int position) {
+		ListNode current ;
+		for (int i = 1; i < position ; ++i){
+			current = head.getNextNode();
+			if (i == position-1){
+				ListNode next = current.getNextNode().getNextNode();
+				current.setNextNode(next);
+			}
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see stackusinglinkedlist.List#displayElements()
+	 */
+	@Override
+	public void displayElements() {
+		for (ListNode current = head.getNextNode() ; current != null ; current = current.getNextNode()){
+			if (current.getNextNode() == null){
+				
+			} else {
+				System.out.print(current.getData()+" -> ");
+			}
+		}
+	}
+
+	/* (non-Javadoc)
+	 * @see stackusinglinkedlist.List#getElement(int)
+	 */
+	@Override
+	public void getElement(int position) {
+		ListNode current ;
+		for (int i = 1; i < position ; ++i){
+			current = head.getNextNode();
+			if (i == position-1){
+				ListNode next = current.getNextNode().getNextNode();
+				current.setNextNode(next);
+			}
+		}
+	}
+}

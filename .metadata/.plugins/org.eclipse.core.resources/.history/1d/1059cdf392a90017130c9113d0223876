@@ -1,0 +1,25 @@
+package linkedlist;
+
+public class MiddleElementInLinkedList{
+
+	public static void main(String[] args) {
+		LinkedList mLinkedList = new LinkedList();
+		
+		addElements(mLinkedList);
+		
+
+	}
+	
+	/**
+	 * This method is to add the elements into the linked list
+	 * by using the random class
+	 * */
+	private static void addElements(LinkedList mLinkedList) {
+		
+	}
+
+	private static void printMiddelElement(LinkedList mList){
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package linkedlist;
+
+public class MiddleElementInLinkedList{
+
+	public static void main(String[] args) {
+		LinkedList mLinkedList = new LinkedList();
+		
+		addElements(mLinkedList);
+		
+
+	}
+	
+	private static void addElements(LinkedList mLinkedList) {
+		
+	}
+
+	public void printMiddelElement(LinkedList mList){
+		
+	}
+
+}

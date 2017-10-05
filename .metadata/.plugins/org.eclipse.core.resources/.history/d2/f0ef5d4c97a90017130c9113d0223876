@@ -1,0 +1,34 @@
+/**
+ * This ProgramPerformanceCalc.java class is created for the calculating the performance of the program which you have done.
+ * 
+ * 
+ */
+
+/**
+ * @author amareshjana
+ * @version 
+ * @since 05-Oct-2017
+ *
+ */
+public class ProgramPerformanceCalc {
+
+
+	/**
+	 * @param args is for the commandLineArgs
+	 */
+	public static void main(String[] args) {
+
+	}
+
+	public int startTime(){
+		return 0;
+	}
+
+	public int endTime(){
+		return 0;
+	}
+	
+	public int calTime(){
+		return 0;
+	}
+}

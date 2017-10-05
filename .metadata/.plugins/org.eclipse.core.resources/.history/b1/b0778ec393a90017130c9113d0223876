@@ -1,0 +1,33 @@
+package linkedlist;
+
+import java.util.Random;
+
+public class MiddleElementInLinkedList{
+
+	public static void main(String[] args) {
+		LinkedList mLinkedList = new LinkedList();
+		
+		addElements(mLinkedList);
+		mLinkedList.displayElements();
+		
+
+	}
+	
+	/**
+	 * This method is to add the elements into the linked list
+	 * by using the random class
+	 * */
+	private static void addElements(LinkedList mLinkedList) {
+		Random mRandom = new Random();
+		for (int i = 0; i < 10; ++i ){
+			int a = mRandom.nextInt(100 - 10) + 10;
+			mLinkedList.addElement(a);
+			System.out.print(
+		}
+	}
+
+	private static void printMiddelElement(LinkedList mList){
+		
+	}
+
+}
