@@ -2833,3 +2833,9 @@ Caused by: java.net.SocketTimeoutException: Read timed out
 	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:196)
 	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:489)
 	... 6 more
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-05 11:26:35.642
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-10-05 11:26:35.643
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

@@ -1,0 +1,9 @@
+package linkedlist;
+
+public interface List {
+	
+	public void push();
+	public void pop();
+	public void peek();
+
+}
