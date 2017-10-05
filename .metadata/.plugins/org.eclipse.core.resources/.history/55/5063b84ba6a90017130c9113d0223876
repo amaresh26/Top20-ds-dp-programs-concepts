@@ -166,13 +166,4 @@ public class LinkedList implements List{
 	public ListNode getHeadNode(){
 		return head;
 	}
-
-	/* (non-Javadoc)
-	 * @see linkedlist_problems.List#deleteElement(int)
-	 */
-	@Override
-	public void deleteElement(int element) {
-		// TODO Auto-generated method stub
-		
-	}
 }

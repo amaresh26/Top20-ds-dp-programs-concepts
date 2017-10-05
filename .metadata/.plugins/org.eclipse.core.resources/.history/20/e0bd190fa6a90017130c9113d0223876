@@ -64,7 +64,7 @@ public class LinkedList implements List{
 		case 2:
 			System.out.println("Please enter the position to delet the node");
 			int position = mScan.nextInt();
-			mLinkedList.deleteElementByPosition(position);
+			mLinkedList.deletElement(position);
 			break;
 		case 3:
 			mLinkedList.displayElements();
@@ -72,7 +72,7 @@ public class LinkedList implements List{
 		case 4:
 			System.out.println("Please enter the position to get the node");
 			int pos = mScan.nextInt();
-			mLinkedList.getElement(pos);
+			mLinkedList.deletElement(pos);
 			break;
 		case 5:
 			System.out.println("Size of linked list is "+size);
@@ -112,7 +112,7 @@ public class LinkedList implements List{
 	 * @see stackusinglinkedlist.List#deletElement(int)
 	 */
 	@Override
-	public void deleteElementByPosition(int position) {
+	public void deletElement(int position) {
 		ListNode current ;
 		for (int i = 1; i < position ; ++i){
 			current = head.getNextNode();
@@ -165,14 +165,5 @@ public class LinkedList implements List{
 	 */
 	public ListNode getHeadNode(){
 		return head;
-	}
-
-	/* (non-Javadoc)
-	 * @see linkedlist_problems.List#deleteElement(int)
-	 */
-	@Override
-	public void deleteElement(int element) {
-		// TODO Auto-generated method stub
-		
 	}
 }

@@ -72,7 +72,7 @@ public class LinkedList implements List{
 		case 4:
 			System.out.println("Please enter the position to get the node");
 			int pos = mScan.nextInt();
-			mLinkedList.getElement(pos);
+			mLinkedList.getElement(position);(pos);
 			break;
 		case 5:
 			System.out.println("Size of linked list is "+size);
@@ -165,14 +165,5 @@ public class LinkedList implements List{
 	 */
 	public ListNode getHeadNode(){
 		return head;
-	}
-
-	/* (non-Javadoc)
-	 * @see linkedlist_problems.List#deleteElement(int)
-	 */
-	@Override
-	public void deleteElement(int element) {
-		// TODO Auto-generated method stub
-		
 	}
 }
