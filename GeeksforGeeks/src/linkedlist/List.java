@@ -15,4 +15,5 @@ public interface List {
 	 void deletElement(int element);
 	 void displayElements();
 	 void getElement(int position);
+	 int size();
 }

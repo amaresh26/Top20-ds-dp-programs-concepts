@@ -7,7 +7,7 @@ package performancecalc;
 
 /**
  * @author amareshjana
- * @version 
+ * @version 1.0
  * @since 05-Oct-2017
  *
  */
@@ -36,6 +36,6 @@ public class ProgramPerformanceCalc {
 	 * this is used to calc the time taken by the program which you have written
 	 * */
 	public void calTime(){
-		System.out.println((mStartTime - mEndTime) / 1000.0 + "seconds");
+		System.out.println("Time taken for executing the program "+(mEndTime - mStartTime) / 1000.0 + "seconds");
 	}
 }

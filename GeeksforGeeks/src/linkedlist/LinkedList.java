@@ -152,6 +152,14 @@ public class LinkedList implements List{
 		}
 	}
 	
+	/* (non-Javadoc)
+	 * @see linkedlist.List#size()
+	 */
+	@Override
+	public int size() {
+		return size;
+	}
+	
 	/*(non-Javadon)
 	 * This is used to get he headNode of the LinkedList class
 	 */
